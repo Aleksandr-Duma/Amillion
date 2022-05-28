@@ -1,0 +1,64 @@
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+html, 
+body{
+	height: 100%;
+	min-width: 320px;
+}
+
+body{
+	font-family: 'Gilroy';
+	font-weight: 300;
+	font-size: 16px;
+	color: #fff;
+	background-color: $main-black;
+	background-image: url(../img/main-bg.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+}
+
+img{
+	display: block;
+	width: 100%;
+	height: auto; 
+}
+
+a{
+	text-decoration: none;
+}
+
+button{
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.wrapper{
+	overflow: hidden;
+}
+
+.container{ 
+	max-width: 1170px; 
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.accent-text{
+	color: $accent-color;
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+        url('../fonts/Gilroy-Light.woff2') format('woff2'),
+        url('../fonts/Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-swap: display;
+}
+
+@font-face {
+    font-family: 'Stolzl Display';
+    src: local('Stolzl Display Medium'), local('Stolzl-Display-Medium'),
+        url('../fonts/StolzlDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/StolzlDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-swap: display;
+}

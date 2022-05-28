@@ -1,0 +1,85 @@
+/*-----------------contacts----------------*/
+.contacts{
+	height: 830px;
+	background-color: #C4C4C4;
+	position: relative;
+	// border: 1px solid green;
+
+	&__content{
+		width: 555px;
+		height: 100%;
+		background: linear-gradient(131.93deg, 
+		rgba(255, 255, 255, 0.13) -0.12%, 
+		rgba(255, 255, 255, 0) 61.53%, 
+		rgba(255, 255, 255, 0) 90.94%), rgba($accent-color, 0.94);
+		position: absolute;
+		left: 390px;
+		top: 0;
+		z-index: 5;
+		padding: 243px 45px 30px 55px;
+
+		&-title{
+			font-weight: 300;
+			font-size: 30px;
+			line-height: 1.1;
+			margin: 0 0 29px 0;
+		}
+
+		&-list{
+			list-style: none;
+			padding-left: 0;
+		}
+
+		&-item{
+			// border: 1px solid green;
+			margin-bottom: 22px;
+		}
+
+		&-info{
+			font-size: 22px;
+			line-height: 1;
+			padding-left: 28px;
+			margin-bottom: 7px;
+			position: relative;
+
+			&::before{
+				content: "";
+				display: block;
+				width: 20px;
+				height: 20px;
+				background-repeat: no-repeat;
+				background-position: center;
+				position: absolute;
+				top: 0;
+				left: 0; 
+			}
+		}
+
+		&-info.local{
+			&::before{
+				background-image: url(../img/icon-local.svg);
+			}
+		}
+
+		&-info.time{
+			&::before{
+				background-image: url(../img/icon-time.svg);
+			}
+		}
+
+		&-info.phone{
+			&::before{
+				background-image: url(../img/icon-phone.svg);
+			}
+		}
+
+		&-description{
+			font-size: 29px;
+			line-height: 1.2;
+		}
+	}
+
+	&__map{
+
+	}
+}
