@@ -1,9 +1,21 @@
 /*-----------------contacts----------------*/
 .contacts{
-	height: 830px;
 	background-color: #C4C4C4;
 	position: relative;
 	// border: 1px solid green;
+
+	&__container{
+		width: 1170px;
+		height: 830px;
+		// border: 1px solid red;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 20;
+		padding-left: 25px;
+		pointer-events: none;
+	}
 
 	&__content{
 		width: 555px;
@@ -12,11 +24,8 @@
 		rgba(255, 255, 255, 0.13) -0.12%, 
 		rgba(255, 255, 255, 0) 61.53%, 
 		rgba(255, 255, 255, 0) 90.94%), rgba($accent-color, 0.94);
-		position: absolute;
-		left: 390px;
-		top: 0;
-		z-index: 5;
 		padding: 243px 45px 30px 55px;
+		pointer-events: auto;
 
 		&-title{
 			font-weight: 300;
@@ -80,6 +89,10 @@
 	}
 
 	&__map{
+		height: 830px;
+	}
 
+	[class*="copyrights-pane"]{
+		display: none !important;
 	}
 }
