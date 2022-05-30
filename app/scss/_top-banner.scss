@@ -1,19 +1,58 @@
 /*----------------top-banner---------------*/
 .top-banner{
-	min-height: 100vh;
-	position: relative;
-	z-index: 0;
-	border: 1px solid blue;
+	background-image: url(../img/lektor-img.png);
+	background-repeat: no-repeat;
+	background-position: center 205px;
+	overflow: hidden;
+
+	@media (max-width: 1120px){
+		background-size: cover;
+		box-shadow: 0px 50px 14px 0px $main-black;
+	} 
+
+	@media (max-width: 620px){
+		background-image: url(../img/lektor-mobile-img.png);
+		background-position: center 210px;
+		background-size: contain;
+	}
+
+	@media (max-width: 560px){
+		background-position: center 250px;	
+	}
+
+	@media (max-width: 510px){
+		box-shadow: unset;
+	}
+
+	&__container{
+		min-height: 100vh;
+		padding-bottom: 50px; 
+
+		@media (max-width: 1120px){
+			padding-bottom: 30px;
+		} 
+
+		@media (max-width: 640px){
+			padding-bottom: 0;
+		} 
+	}
 
 	&__content{
-		height: 100vh;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		border: 1px solid red;
-		padding-top: 68px;
+		align-items: center; 
+		padding-top: 120px;
+
 		position: relative;
 		z-index: 1;
+
+		@media (max-width: 990px){
+			padding-top: 100px;
+		}
+
+		@media (max-width: 620px){
+			padding-top: 90px;
+		}
 	}
 
 	&__title{
@@ -28,6 +67,19 @@
 		background-clip: text;
 		text-fill-color: transparent;
 		margin: 0 0 20px 0;
+
+		@media (max-width: 990px){
+			font-size: 52px;
+		}
+
+		@media (max-width: 768px){
+			font-size: 42px;
+		}
+
+		@media (max-width: 620px){
+			max-width: 350px;
+			font-size: 36px;
+		}
 	}
 
 	&__subtitle{
@@ -35,29 +87,84 @@
 		font-size: 19px;
 		line-height: 1.6;
 		text-align: center;
-		// border: 1px solid green;
+
+		@media (max-width: 990px){
+			max-width: 600px;
+			font-size: 17px;
+		}
+
+		@media (max-width: 768px){
+			max-width: 550px;
+			font-size: 16px;
+		}
+
+		@media (max-width: 620px){
+			max-width: 290px;
+			font-size: 15px;
+		}
 	}
 
-	&__image{
-		// width: 100%;
-		display: block;
-		position: absolute;
-		top: 155px;
-		left: 50%;
-		transform: translateX(-50%);
+	&__label-wrap{
+		min-height: 700px;
+		position: relative;
 
 		@media (max-width: 1120px){
-			// width: 100%;
-			// width: auto;
-		} 
+			min-height: 600px;
+		}
+
+		@media (max-width: 640px){
+			min-height: 500px;
+		}
+
+		@media (max-width: 520px){
+			min-height: 455px;
+		}
+
+		@media (max-width: 460px){
+			min-height: 410px;
+		}
+
+		@media (max-width: 390px){
+			min-height: 370px;
+		}
+
+		@media (max-width: 360px){
+			min-height: 340px;
+		}
 	}
 }
 
 .lector-label{
 	width: 255px;
 	position: absolute;
-	top: 710px;
-	left: 41.5%;
+	left: 47.2%;
+	bottom: 115px;
+	transform: translateX(-50%);
+
+	@media (max-width: 1120px){
+		bottom: 150px;
+	}
+
+	@media (max-width: 990px){
+		bottom: 130px;
+	}
+
+	@media (max-width: 768px){
+		width: 212px;
+	}
+
+	@media (max-width: 640px){
+		width: 163px;
+		bottom: 60px;
+	}
+
+	@media (max-width: 620px){
+		bottom: 70px;
+	}
+
+	@media (max-width: 560px){
+		bottom: 40px;
+	}
 
 	&__name{
 		width: 203px;
@@ -72,12 +179,30 @@
 		position: relative;
 		z-index: 5;
 
+		@media (max-width: 768px){
+			width: 170px;
+			height: 35px;
+		}
+
+		@media (max-width: 640px){
+			width: 125px;
+			height: 25px;
+		}
+
 		&-text{
 			display: inline-block;
 			font-size: 29px;
 			line-height: 0.9;
 			text-align: center;
 			transform: skewX(10deg);
+
+			@media (max-width: 768px){
+				font-size: 22px;
+			}
+
+			@media (max-width: 640px){
+				font-size: 18px;
+			}
 		}
 	}
 
@@ -95,6 +220,17 @@
 		position: relative;
 		z-index: 4;
 
+		@media (max-width: 768px){
+			width: 200px;
+			height: 43px;
+			padding-right: 10px;
+		}
+
+		@media (max-width: 640px){
+			width: 153px;
+			height: 32px;
+		}
+
 		&-text{
 			display: inline-block;
 			font-size: 20px;
@@ -102,6 +238,14 @@
 			text-align: right;
 			color: $main-black;
 			transform: skewX(10deg);
+
+			@media (max-width: 768px){
+				font-size: 16px;
+			}
+
+			@media (max-width: 640px){
+				font-size: 12px;
+			}
 		}
 	}
 }

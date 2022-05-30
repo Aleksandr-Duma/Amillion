@@ -2,12 +2,10 @@
 .contacts{
 	background-color: #C4C4C4;
 	position: relative;
-	// border: 1px solid green;
 
 	&__container{
-		width: 1170px;
+		width: 1170px; 
 		height: 830px;
-		// border: 1px solid red;
 		position: absolute;
 		top: 0;
 		left: 50%;
@@ -15,6 +13,24 @@
 		z-index: 20;
 		padding-left: 25px;
 		pointer-events: none;
+
+		@media (max-width: 1120px){
+			width: 100%;
+			height: 600px;
+			padding: 0;
+		}
+
+		@media (max-width: 990px){
+			height: 500px;
+		}
+
+		@media (max-width: 640px){
+			height: auto;
+			position: static;
+			transform: translateX(0%);
+			display: flex;
+			justify-content: center;
+		}
 	}
 
 	&__content{
@@ -27,11 +43,44 @@
 		padding: 243px 45px 30px 55px;
 		pointer-events: auto;
 
+		@media (max-width: 1120px){
+			width: 450px;
+			padding: 140px 40px 30px 40px;
+		}
+
+		@media (max-width: 990px){
+			width: 360px;
+			padding: 90px 25px 30px 25px;
+		}
+
+		@media (max-width: 640px){
+			width: 100%;
+			padding: 37px 100px 30px 100px;
+		}
+
+		@media (max-width: 560px){
+			padding: 37px 60px 30px 60px;
+		}
+
+		@media (max-width: 460px){
+			padding: 37px 30px 30px 30px;
+		}
+
 		&-title{
 			font-weight: 300;
 			font-size: 30px;
 			line-height: 1.1;
 			margin: 0 0 29px 0;
+
+			@media (max-width: 1120px){
+				font-size: 24px;
+			}
+
+			@media (max-width: 990px){
+				font-size: 22px;
+				text-align: center;
+				margin: 0 0 37px 0;
+			}
 		}
 
 		&-list{
@@ -40,7 +89,6 @@
 		}
 
 		&-item{
-			// border: 1px solid green;
 			margin-bottom: 22px;
 		}
 
@@ -50,6 +98,14 @@
 			padding-left: 28px;
 			margin-bottom: 7px;
 			position: relative;
+
+			@media (max-width: 1120px){
+				font-size: 18px;
+			}
+
+			@media (max-width: 990px){
+				font-size: 16px;
+			}
 
 			&::before{
 				content: "";
@@ -85,11 +141,31 @@
 		&-description{
 			font-size: 29px;
 			line-height: 1.2;
+
+			@media (max-width: 1120px){
+				font-size: 24px;
+			}
+
+			@media (max-width: 990px){
+				font-size: 22px;
+			}
 		}
 	}
 
 	&__map{
 		height: 830px;
+
+		@media (max-width: 1120px){
+			height: 600px;
+		} 
+
+		@media (max-width: 990px){
+			height: 500px;
+		}
+
+		@media (max-width: 640px){
+			height: 385px;
+		}
 	}
 
 	[class*="copyrights-pane"]{
