@@ -7,7 +7,7 @@ let del = require('del');
 let autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('clean', async function(){
-	del.sync('dist')
+	del.sync('docs')
 });
 
 gulp.task('scss', function(){
@@ -61,19 +61,19 @@ gulp.task('browser-sync', function(){
 
 gulp.task('export', function(){
 	let buildHtml = gulp.src('app/**/*.html')
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('docs'));
 
 	let buildCss = gulp.src('app/css/**/*.css')
-		.pipe(gulp.dest('dist/css'));
+		.pipe(gulp.dest('docs/css'));
 
 	let buildJs = gulp.src('app/js/**/*.js')
-		.pipe(gulp.dest('dist/js'));
+		.pipe(gulp.dest('docs/js'));
 
 	let buildFonts = gulp.src('app/fonts/**/*.*')
-		.pipe(gulp.dest('dist/fonts'));
+		.pipe(gulp.dest('docs/fonts'));
 
 	let buildImg = gulp.src('app/img/**/*.*')
-		.pipe(gulp.dest('dist/img'));
+		.pipe(gulp.dest('docs/img'));
 });
 
 gulp.task('watch', function(){
