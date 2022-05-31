@@ -124,12 +124,17 @@
 				</div>
 				<div class="container questions__container-form">
 					<form class="questions__form">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Amillion">
+						<input type="hidden" name="admin_email" value="merey.galymuly@gmail.com, dumaweb9@gmail.com">
+						<input type="hidden" name="form_subject" value="Main form">
+						<!-- END Hidden Required Fields -->
 						<h6 class="questions__form-suptitle">Запишитесь на живой мастер-класс</h6>
 						<h5 class="questions__form-title">“Инвестиции под ключ” и&nbsp;получите все ответы</h5>
 						<label class="questions__form-label" for="name">Введите ваше имя</label>
-						<input class="questions__form-input" id="name" type="text" placeholder="Введите ваше имя">
+						<input class="questions__form-input" id="name" type="text" placeholder="Введите ваше имя" required>
 						<label class="questions__form-label" for="phone">Введите ваш телефон</label>
-						<input class="questions__form-input" id="phone" type="tel" placeholder="+7  000  00  00">
+						<input class="questions__form-input" id="phone" type="tel" placeholder="+7  000  00  00" required>
 						<button class="questions__form-submit" type="submit">Участвовать бесплатно</button>
 					</form>
 				</div>
@@ -160,8 +165,7 @@
 		<footer class="footer">© Amillion 2021</footer>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
-    </script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
 	<script src = "js/libs.min.js"></script>
 	<script src = "js/main.js"></script>
 </body>
