@@ -1,13 +1,16 @@
+
+let myMap;
+
 ymaps.ready(init);
     function init(){
-     var myMap = new ymaps.Map("map", {
+     	myMap = new ymaps.Map("map", {
         center: [43.23739173405009,76.89356774865722],
         zoom: 17
     });
 
     let placemark = new ymaps.Placemark([43.238201481481376,76.89550387829644], {}, {
     	iconLayout: 'default#image',
-    	iconImageHref: '../img/placeholder.png',
+    	iconImageHref: 'img/placeholder.png',
     	iconImageSize: [70, 70],
     	iconImageOffset: [-30, -40]
     });
@@ -23,5 +26,21 @@ ymaps.ready(init);
 }
 
 $(function(){
+//...................E-mail Ajax Send...................
 
+    $("form").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            window.location.href = 'thxpage.html';
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
 });
