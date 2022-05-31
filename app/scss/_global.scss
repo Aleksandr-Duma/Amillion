@@ -51,12 +51,11 @@ button{
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
+	overflow: hidden;
 
-	@media (max-width: 1650px){
+		@media (max-width: 1650px){
 		background-size: auto;
 	}
-
-	overflow: hidden;
 }
 
 .container{ 
