@@ -83,7 +83,11 @@
 			left: 0;
 			opacity: 0.3;
 			filter: blur;
-			background: linear-gradient(to left, transparent 10%, #fff 35%, #fff 38%, transparent 60%);
+			background: linear-gradient(to left, 
+				rgba(255, 255, 255, 0) 10%, 
+				rgba(255, 255, 255, 0.7) 35%, 
+				rgba(255, 255, 255, 0.7) 38%, 
+				rgba(255, 255, 255, 0) 60%);
 			transform: translate(-100%, -25%) rotate(10deg);
 			animation: blick 5s infinite;
 		}
