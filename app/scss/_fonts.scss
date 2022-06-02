@@ -9,6 +9,16 @@
 }
 
 @font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Medium'), local('gilroy-medium'),
+         url('../fonts/gilroy-medium-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Stolzl Display';
     src: local('Stolzl Display Medium'), local('Stolzl-Display-Medium'),
         url('../fonts/StolzlDisplay-Medium.woff2') format('woff2'),
