@@ -330,7 +330,7 @@
 
 @keyframes string-right {
 	from {
-		transform: translateX(0)
+		transform: translateX(0);
 	}
 	to {
 		transform: translateX(-40%);
@@ -339,7 +339,7 @@
 
 @keyframes string-left {
 	from {
-		transform: translateX(-40%)
+		transform: translateX(-40%);
 	}
 	to {
 		transform: translateX(0%);
