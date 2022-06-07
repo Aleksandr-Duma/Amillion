@@ -642,22 +642,16 @@ button {
   }
 }
 
-@media (max-width: 860px) {
-  .top-banner {
-    background-position: 48.5% 100px;
-  }
-}
-
 @media (max-width: 640px) {
   .top-banner {
-    background-position: 49.5% 190px;
+    background-position: 49.5% 140px;
     background-size: 230%;
   }
 }
 
 @media (max-width: 560px) {
   .top-banner {
-    background-position: 49.5% 220px;
+    background-position: 49% 180px;
   }
 }
 
@@ -785,31 +779,31 @@ button {
   .top-banner__subtitle {
     max-width: 300px;
     font-size: 15px;
-    margin-bottom: 540px;
+    margin-bottom: 510px;
   }
 }
 
 @media (max-width: 560px) {
   .top-banner__subtitle {
-    margin-bottom: 500px;
+    margin-bottom: 480px;
   }
 }
 
 @media (max-width: 490px) {
   .top-banner__subtitle {
-    margin-bottom: 440px;
+    margin-bottom: 400px;
   }
 }
 
 @media (max-width: 420px) {
   .top-banner__subtitle {
-    margin-bottom: 380px;
+    margin-bottom: 335px;
   }
 }
 
 @media (max-width: 380px) {
   .top-banner__subtitle {
-    margin-bottom: 325px;
+    margin-bottom: 290px;
   }
 }
 
