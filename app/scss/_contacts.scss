@@ -154,6 +154,7 @@
 
 	&__map{
 		height: 830px;
+		overflow: hidden;
 
 		@media (max-width: 1120px){
 			height: 600px;

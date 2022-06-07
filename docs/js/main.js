@@ -1,9 +1,14 @@
 
-let myMap;
+//..................Lazy-load Yandex Map................
 
-ymaps.ready(init);
-    function init(){
-     	myMap = new ymaps.Map("map", {
+setTimeout(function(){
+    let script = document.createElement('script');
+    script.src = 'https://api-maps.yandex.ru/2.1/?apikey=ваш&nbsp;API-ключ&lang=ru_RU&onload=init';
+    document.querySelector('#map').append(script);
+}, 3000);
+
+function init(){
+    let myMap = new ymaps.Map("map", {
         center: [43.23761921392348,76.89491958200068],
         zoom: 17
     });
@@ -21,7 +26,6 @@ ymaps.ready(init);
     myMap.controls.remove('typeSelector');
     myMap.controls.remove('fullscreenControl');
     myMap.controls.remove('zoomControl');
-
     myMap.geoObjects.add(placemark);
 }
 
