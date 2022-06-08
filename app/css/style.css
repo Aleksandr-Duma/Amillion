@@ -1792,14 +1792,14 @@ button {
 
 /*------------------thanks-----------------*/
 .thanks {
-  background-image: url(../img/main-bg.png);
+  background-image: url(../img/thxpage-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
   background-size: cover;
 }
 
 .thanks__container {
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1813,69 +1813,153 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 150px 0 0 0;
+}
+
+@media (max-width: 1200px) {
+  .thanks__container {
+    padding: 100px 0 0 0;
+  }
+}
+
+.thanks__suptitle {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 1;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+@media (max-width: 990px) {
+  .thanks__suptitle {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 640px) {
+  .thanks__suptitle {
+    font-size: 32px;
+  }
 }
 
 .thanks__title {
-  font-family: 'Stolzl Display';
-  font-weight: 500;
-  font-size: 72px;
-  line-height: 0.95;
-  text-align: center;
-  background: -o-linear-gradient(359.69deg, #FFFFFF 37.15%, #F6A158 89.09%);
-  background: linear-gradient(90.31deg, #FFFFFF 37.15%, #F6A158 89.09%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 92px;
+  line-height: 1;
+  color: #fff;
   margin: 0 0 20px 0;
 }
 
 @media (max-width: 990px) {
   .thanks__title {
-    font-size: 64px;
+    font-size: 70px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .thanks__title {
-    font-size: 54px;
-  }
-}
-
-@media (max-width: 620px) {
-  .thanks__title {
-    max-width: 350px;
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 
 .thanks__subtitle {
-  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 21px;
   line-height: 1.2;
-  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  margin: 0 0 30px 0;
 }
 
 @media (max-width: 990px) {
-  .thanks__subtitle {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 768px) {
   .thanks__subtitle {
     font-size: 18px;
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 640px) {
   .thanks__subtitle {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
-.thanks__home-link {
-  text-decoration: underline;
-  font-size: 20px;
-  color: #F6A158;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+.thanks__title-instagram {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+@media (max-width: 990px) {
+  .thanks__title-instagram {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .thanks__title-instagram {
+    font-size: 22px;
+  }
+}
+
+.thanks__link-instagram {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.thanks__link-instagram img {
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 640px) {
+  .thanks__link-instagram img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.thanks__underlink-message {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 990px) {
+  .thanks__underlink-message {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 640px) {
+  .thanks__underlink-message {
+    font-size: 20px;
+  }
+}
+
+.thanks__copyright {
+  max-width: 200px;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  margin-top: auto;
+}
+
+@media (max-width: 640px) {
+  .thanks__copyright {
+    max-width: 170px;
+    font-size: 14px;
+  }
 }
