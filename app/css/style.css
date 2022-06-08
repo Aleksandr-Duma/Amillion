@@ -450,11 +450,12 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 25;
   overflow: hidden;
+  padding-bottom: 20px;
 }
 
 .header__content {
@@ -467,6 +468,7 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 0 0 4px 4px;
 }
 
 .header__content-ivent {
@@ -475,6 +477,10 @@ button {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.8px;
+  border-radius: 0 0 4px 4px;
+  background-color: #1D1E20;
+  -webkit-box-shadow: 0px 7px 8px 0px rgba(29, 30, 32, 0.4);
+  box-shadow: 0px 7px 8px 0px rgba(29, 30, 32, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,13 +502,21 @@ button {
   .header__content-ivent {
     width: 85px;
     height: 40px;
-    font-size: 11px;
+    font-size: 10px;
+    text-align: center;
     padding: 0 5px 0 5px;
   }
 }
 
 .header__content-ivent.left {
   text-align: right;
+}
+
+@media (max-width: 640px) {
+  .header__content-ivent.left {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 
 .header__content-date {
@@ -514,7 +528,9 @@ button {
   border-radius: 0 0 4px 4px;
   background: -o-linear-gradient(335.01deg, rgba(255, 255, 255, 0.2) 17.34%, rgba(255, 255, 255, 0) 101.03%), #F6A158;
   background: linear-gradient(114.99deg, rgba(255, 255, 255, 0.2) 17.34%, rgba(255, 255, 255, 0) 101.03%), #F6A158;
-  border-bottom: 3px solid #CA7834;
+  -webkit-box-shadow: 0px 7px 8px 0px rgba(29, 30, 32, 0.4);
+  box-shadow: 0px 7px 8px 0px rgba(29, 30, 32, 0.4);
+  border-bottom: 2px solid #CA7834;
   position: relative;
   overflow: hidden;
   padding-top: 8px;
@@ -526,7 +542,6 @@ button {
     width: 118px;
     height: 52px;
     font-size: 19px;
-    border-bottom: 2px solid #CA7834;
     padding-top: 5px;
   }
 }
@@ -1467,6 +1482,7 @@ button {
   border-radius: 10px;
   background: -o-linear-gradient(275.01deg, rgba(255, 255, 255, 0.29) 3.64%, rgba(255, 255, 255, 0) 106%), #F6A158;
   background: linear-gradient(174.99deg, rgba(255, 255, 255, 0.29) 3.64%, rgba(255, 255, 255, 0) 106%), #F6A158;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transition: background .2s ease;
   -o-transition: background .2s ease;
   transition: background .2s ease;
@@ -1776,6 +1792,13 @@ button {
 
 /*------------------thanks-----------------*/
 .thanks {
+  background-image: url(../img/main-bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.thanks__container {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1795,7 +1818,7 @@ button {
 .thanks__title {
   font-family: 'Stolzl Display';
   font-weight: 500;
-  font-size: 65px;
+  font-size: 72px;
   line-height: 0.95;
   text-align: center;
   background: -o-linear-gradient(359.69deg, #FFFFFF 37.15%, #F6A158 89.09%);
@@ -1809,20 +1832,20 @@ button {
 
 @media (max-width: 990px) {
   .thanks__title {
-    font-size: 52px;
+    font-size: 64px;
   }
 }
 
 @media (max-width: 768px) {
   .thanks__title {
-    font-size: 42px;
+    font-size: 54px;
   }
 }
 
 @media (max-width: 620px) {
   .thanks__title {
     max-width: 350px;
-    font-size: 36px;
+    font-size: 42px;
   }
 }
 
@@ -1852,8 +1875,7 @@ button {
 
 .thanks__home-link {
   text-decoration: underline;
-  font-family: 'Stolzl Display';
-  font-weight: 500;
   font-size: 20px;
   color: #F6A158;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

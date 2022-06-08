@@ -295,6 +295,7 @@
 			background: linear-gradient(174.99deg, 
 			rgba(255, 255, 255, 0.29) 3.64%, 
 			rgba(255, 255, 255, 0) 106%), $accent-color;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 			transition: background .2s ease;
 			margin-top: 14px;
 
