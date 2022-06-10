@@ -132,16 +132,21 @@
 					<form class="questions__form">
 						<!-- Hidden Required Fields -->
 						<input type="hidden" name="project_name" value="Amillion">
-						<input type="hidden" name="admin_email" value="merey.galymuly@gmail.com, dumaweb9@gmail.com">
-						<input type="hidden" name="form_subject" value="Main form">
-						<input type="hidden" name="utm_sourse" value="<?php echo isset($_GET['utm_sourse']) ? $_GET['utm_sourse'] : '' ;?/>">
-						<!-- END Hidden Required Fields -->
+						<input type="hidden" name="admin_email" value="merey.galymuly@gmail.com,dumaweb9@gmail.com">
+						<input type="hidden" name="form_subject" value="Main form"> 
+						<!-- Hidden UTM Fields --> 
+						<input type="hidden" name="Источник_кампании:" value="<?php $utm_source = $_GET['utm_source']; echo $utm_source;?>"> 
+						<input type="hidden" name="Тип_трафика:" value="<?php $utm_medium = $_GET['utm_medium']; echo $utm_medium;?>">
+						<input type="hidden" name="Названия_кампании:" value="<?php $utm_campaign = $_GET['utm_campaign']; echo $utm_campaign;?>">
+						<input type="hidden" name="Идентификатор_кампании:" value="<?php $utm_content = $_GET['utm_content']; echo $utm_content;?>">
+						<input type="hidden" name="Ключевое_слово:" value="<?php $utm_term = $_GET['utm_term']; echo $utm_term;?>">
+						<!-- END Hidden Required Fields --> 
 						<h6 class="questions__form-suptitle">Запишитесь на живой мастер-класс</h6>
 						<h5 class="questions__form-title">“Инвестиции под ключ” и&nbsp;получите все ответы</h5>
 						<label class="questions__form-label" for="name">Введите ваше имя</label>
-						<input class="questions__form-input" id="name" type="text" placeholder="Введите ваше имя" required>
+						<input class="questions__form-input" name="Имя" id="name" type="text" placeholder="Введите ваше имя" required>
 						<label class="questions__form-label" for="phone">Введите ваш телефон</label>
-						<input class="questions__form-input" id="phone" type="tel" placeholder="+7  000  00  00" required>
+						<input class="questions__form-input" name="Телефон" id="phone" type="tel" placeholder="+7 (000) 000 00 00" required>
 						<button class="questions__form-submit" type="submit">Участвовать бесплатно</button>
 					</form>
 				</div>
@@ -172,6 +177,7 @@
 		<footer class="footer">© Amillion 2021</footer>
 	</div>
 	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

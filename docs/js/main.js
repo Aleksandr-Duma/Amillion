@@ -30,6 +30,7 @@ function init(){
 }
 
 $(function(){
+
 //...................E-mail Ajax Send...................
 
     $("form").submit(function() { //Change
@@ -47,4 +48,8 @@ $(function(){
         });
         return false;
     });
+
+//.....................MaskedInput......................
+
+    $("input[type='tel']").mask("+7 (999) 999-99-99");
 });
