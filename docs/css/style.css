@@ -1792,9 +1792,9 @@ button {
 
 /*------------------thanks-----------------*/
 .thanks {
-  background-image: url(../img/thxpage-bg.jpg);
+  background-image: url(../img/main-bg.png);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
 }
 
