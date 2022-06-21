@@ -154,6 +154,8 @@
 
 	&__map{
 		height: 830px;
+		background-image: url(../img/yandex-placeholder.jpg);
+		background-repeat: repeat;
 		overflow: hidden;
 
 		@media (max-width: 1120px){
