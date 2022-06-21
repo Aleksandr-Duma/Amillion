@@ -1758,6 +1758,8 @@ button {
 
 .contacts__map {
   height: 830px;
+  background-image: url(../img/yandex-placeholder.jpg);
+  background-repeat: repeat;
   overflow: hidden;
 }
 
